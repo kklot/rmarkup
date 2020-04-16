@@ -1,0 +1,21 @@
+---
+title: "Test rmarkup"
+author: "Kinh Nguyen"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r echo=FALSE, fig.cap = "A figure caption"}
+palette(hcl.colors(100))
+par(bg='black', mar=c(0,0,0,0))
+x <- 1:100
+plot(x, col=x, pch=16, cex=x)
+text(90,90, 'rmarkup', cex=4, col='gray40')
+text(70,70, 'rmarkup', cex=3)
+```
+
+```{r echo=FALSE, fig.cap = "Another figure caption"}
+par(bg='black', mar=c(0,0,0,0))
+plot(rev(x), col=x, pch=16, cex=x)
+text(80,20, '\\(- -;)\\', cex=2)
+```
